@@ -1,0 +1,278 @@
+body,html
+{
+    height: 100%;
+    margin: 0px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    overflow-x: hidden;
+}
+p
+{
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+.waveupper1
+{
+    background: url("images/bg-section-top-desktop-1.svg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+.waveupper2
+{
+    background: url("images/bg-section-top-desktop-2.svg");
+    background-position: center;
+    height: 150px;
+}
+.wavelower2
+{
+    background: url("images/bg-section-bottom-desktop-2.svg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+.wavelower1
+{
+    background: url("images/bg-section-bottom-desktop-1.svg");
+    background-size: cover;
+    height: 150px;
+    background-position: center;
+}
+.wavefoot
+{
+    background: url("images/bg-footer-top-desktop.svg");
+    background-size: cover;
+    height: 150px;
+    background-position: center;
+}
+.hide
+{
+    display: none;
+}
+#email
+{
+    border: 0px;
+    border-radius: 3px;
+    padding: 2% 5%;
+
+}
+form button
+{
+    margin-left: 5%;
+    padding: 2% 6%;
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(322, 100%, 66%);
+    transition: background-color 200ms ease-in-out;
+}
+form button:hover
+{
+    background-color: hsl(321, 100%, 78%);
+
+}
+.socials a
+{
+    padding: 3%;
+    font-size: 2.5em;
+    color: white;
+    transition: color 200ms ease-in-out;
+}
+.socials a:hover
+{
+    color: cyan;
+}
+.socials a:nth-child(1)
+{
+    padding-left: 0% ;
+}
+
+h2
+{
+    margin: 0px ;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+}
+.heading
+{
+    text-align: center;
+}
+.heading p
+{
+    width: 40%;
+    display: inline-block;
+}
+.getstart
+{
+    margin:50px;
+    padding: 15px 50px;
+    border: 0px;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 35px ;
+    color: white;
+    box-shadow: 2px 5px 10px 1px lightgrey;
+    transition: background-color 200ms ease-in-out;
+}
+.getstart:hover
+{
+    background-color: hsl(321, 100%, 78%);
+    cursor: pointer;
+}
+.community
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 22%;
+}
+.found p ,.messages p
+{
+    width: 100%;
+    text-align: center;
+}
+.found img ,.messages img
+{
+    text-align: left;
+    display: inline-block;
+    width: 30px !important;
+}
+.found h1 ,.messages h1
+{
+    margin: 0px;
+    text-align: left;
+    font-size: 5rem;
+}
+.found,.messages
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.heading img
+{
+    width: 70%
+}
+nav button
+{
+    margin:1%;
+    padding: 7px 30px;
+    border: 2px solid hsl(322, 100%, 66%);
+    background-color: white;
+    size: 0.8em;
+    border-radius: 35px ;
+    color: hsl(322, 100%, 66%);
+    box-shadow: 2px 3px 5px 1px rgba(211, 211, 211, 0.644);
+    transition: background-color 200ms ease-in-out;
+}
+nav button:hover
+{
+    border: 2px solid hsl(321, 100%, 78%);
+    cursor: pointer;
+    color: hsl(321, 100%, 78%);;
+}
+.wavecontent
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+.grow
+{
+    padding: 10%;
+}
+.wavecontent img
+{
+    width: 100%;
+}
+.ready
+{
+    text-align: center;
+    padding: 70px 0px;
+    font-size: 20px;
+}
+footer
+{
+    padding-top: 10%;
+}
+.foot
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 6% 3% 6%;
+}
+.contact, .newsletter
+{
+    display: inline-block;
+    width: 40%;
+}
+.newsletter p
+{
+    width: 72%;
+    font-size: smaller;
+    padding-bottom: 5%;
+}
+@media (max-width:950px)
+{
+    .foot
+    {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .newsletter,.contact,.newsletter p,form
+    {
+        width: 80%;
+    }
+    .newsletter
+    {
+        order: 0;
+        margin-bottom: 50px;
+    }
+    #email
+    {
+        width: 90%;
+        margin-bottom: 10px;
+        padding:10px 20px;
+        display: inline-block;
+    }
+    .newsletter button
+    {
+        display: inline-block;
+        margin-right: 0px;
+    }
+    .contact
+    {
+        order: 1;
+    }
+    .heading p,.heading h2
+    {
+        display: inline-block;
+        width: 80%;
+    }
+    .community
+    {
+        flex-direction: column;
+    }
+    .found,.messages
+    {
+        padding-top: 30px;
+    }
+    .wavecontent
+    {
+        flex-direction: column;
+    }
+    .grow
+    {
+        order: 1;
+    }
+    .growimg
+    {
+        order: 0;
+    }
+}  

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="images/logo.svg" alt="" />
+      <button id="tryme">Try it Free</button>
+    </nav>
+    <div class="container">
+      <div class="heading">
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p>
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <br />
+        <button class="getstart">Get Started For Free</button>
+        <br />
+        <img src="images/screen-mockups.svg" alt="" /><br />
+        <div class="community">
+          <div class="found">
+            <img src="images/icon-communities.svg" alt="" />
+            <h1>1.4k+</h1>
+            <p>Communities Found</p>
+          </div>
+          <div class="messages">
+            <img src="images/icon-messages.svg" alt="" />
+            <h1>2.7m+</h1>
+            <p>Messages Sent</p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="waveupper1"></div>
+        <div
+          class="wavecontent"
+          style="background-color: hsl(207, 100%, 98%); margin-top: 0px"
+        >
+          <div class="grow">
+            <h2>Grow Together</h2>
+            <p>
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+          <div class="growimg">
+            <img src="images/illustration-grow-together.svg" alt="" />
+          </div>
+        </div>
+        <div class="wavelower1"></div>
+      </div>
+      <div class="content">
+        <div class="wavecontent">
+          <div class="growimg">
+            <img src="images/illustration-flowing-conversation.svg" alt="" />
+          </div>
+          <div class="grow">
+            <h2>Flowing Conversations</h2>
+            <p>
+              You wouldn't paginate a convrsation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="waveupper2"></div>
+        <div
+          class="wavecontent"
+          style="background-color: hsl(207, 100%, 98%); margin-top: 0px"
+        >
+          <div class="grow">
+            <h2>Your Users</h2>
+            <p>
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+          <div class="growimg">
+            <img src="images/illustration-your-users.svg" alt="" />
+          </div>
+        </div>
+        <div class="wavelower2"></div>
+      </div>
+      <div class="ready">
+        <h2>Ready To Build Your Community?</h2>
+        <button class="getstart">Get Started For Free</button>
+      </div>
+    </div>
+    <footer>
+      <div class="wavefoot"></div>
+      <div
+        class="foot"
+        style="background-color: hsl(192, 100%, 9%); color: white"
+      >
+        <div class="contact">
+          <img src="images/icon-messages.svg" alt="" />
+          <h2 style="display: inline-block;font-size:45px">Huddle</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+            similique, laborum, error quos quas id sint sapiente minima autem
+            consequatur ipsam, velit voluptate officia quaerat neque nisi
+            voluptas. Nam, delectus!
+          </p>
+          <p>
+            <img src="images/icon-phone.svg" alt="" />
+            Phone: +1-543-123-4567
+          </p>
+          <p>
+            <img src="images/icon-email.svg" alt="" />
+            example@huddle.com
+          </p>
+          <div class="socials">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h3>NEWSLETTER</h3>
+          <p>
+            To recieve tips on how to grow your community, sign up to our
+            weeekly newsletter. We'll never send you spam or pass on your email
+            address.
+          </p>
+          <form action="" method="POST" id="subscribe">
+            <input type="text" class="email" name="email" id="email"/>
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="hide error" style="color: hsl(322, 100%, 66%);">Please enter correct email address</div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      const form=document.querySelector('#subscribe')
+      const error=document.querySelector('.error')
+      form.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        let email=form.elements.email.value
+        if(!email.match(mailformat))        
+          error.classList.remove('hide')
+      })
+    </script>
+  </body>
+</html>
