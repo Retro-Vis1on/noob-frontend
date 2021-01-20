@@ -1,0 +1,152 @@
+html,body
+{
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container
+{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+header
+{
+    text-align: center;
+    background: url(images/pattern-bg.png);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+    color: white;
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+header h3,form
+{
+    margin: 0px;
+    padding: 1.8%;
+}
+header>h3
+{
+    font-size: 35px;    
+}
+
+#mapid {
+    flex-grow: 1;
+    z-index: 0;
+}
+
+.info p,.info h4,.data
+{
+    display: inline-block;
+    font-family: 'Rubik';
+}
+.info p
+{
+    color: hsl(0, 0%, 59%);
+}
+.info
+{
+    position: absolute;
+    height: 110px;
+    top: 190px;
+    left: 15%;
+    display: flex;
+    text-align: center;
+    z-index: 1;
+    width: 70%;
+    align-items: center;
+    text-align: left;
+    border-radius: 12px;
+    box-shadow: 3px 4px 10px 1px rgba(158, 158, 158, 0.582);
+    justify-content: space-evenly;
+    background-color: white;
+    
+}
+.data > p
+{
+    margin-right: 0px!important;
+    /* transform: scale(0.8); */
+    font-size: x-small;
+}
+.data
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 45%;
+    width: 25%;
+    padding: 0% 2%;
+    border-right: 1px solid rgba(211, 211, 211, 0.151);
+}
+.data:nth-child(4)
+{
+    border: 0px;
+}
+.info p,.info h4
+{
+    margin: 2px;
+}
+.hide
+{
+    display: none;
+}
+form input
+{
+ width:40%;
+ height: 38.5px;
+ padding: 0% 1%;
+    margin: 0px;
+    border: 0px;
+    border-radius: 12px 0px 0px 12px;
+    outline: none;
+}
+form button
+{
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    padding: 12.8px 20px;
+    border: 0px;
+    border-radius: 0px 12px 12px 0px;
+}
+@media(max-width:640px)
+{
+    .info{
+        flex-direction: column;
+        height: 50%;
+        top: 130px;
+        width: 90%;
+        left: 5%;
+    }
+    #mapid
+    {
+        height: 50%;
+    }
+    .data
+    {
+        
+        padding: 1%;
+        width: 75%;
+        align-items: center;
+        border-bottom: 1px solid rgba(211, 211, 211, 0.151);
+        border-right: 0px;
+        text-align: center;
+        justify-content: center;
+        height: 30%;
+    }
+    .data:nth-child(4)
+    {
+        border-bottom:0px ;
+    }
+    form input
+    {
+        width: 80%;
+    }
+
+}
