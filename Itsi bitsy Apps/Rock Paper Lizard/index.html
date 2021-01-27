@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="rules cloak hide">
+      <div class="card">
+        <div class="nav">
+          <h3 style="display: inline">RULES</h3>
+          <img src="images/icon-close.svg" alt="" class="cross" />
+        </div>
+        <img src="images/image-rules-bonus.svg" alt="" />
+      </div>
+    </div>
+    <header>
+      <div class="content">
+        <img src="images/logo-bonus.svg" alt="" />
+        <div class="score">
+          <p>Score</p>
+          <h3 id="sval">0</h3>
+        </div>
+      </div>
+    </header>
+    <div class="compete cloak hide">
+      <div class="outer1">
+        <div
+          class="player winner"
+          style="display: flex; align-items: center; flex-direction: column"
+        >
+          <h3>YOU PICKED</h3>
+        </div>
+      </div>
+      <div class="outer2">
+        <div
+          class="house"
+          style="display: flex; align-items: center; flex-direction: column"
+        >
+          <h3>THE HOUSE PICKED</h3>
+        </div>
+      </div>
+    </div>
+    <div class="messagePar">
+      <div class="message cloak hide">
+        <h2 class="whowon">Attank Mcha diye</h2>
+        <button class="rst">Play Again</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="selection">
+        <div class="scissors move scissors-pos"></div>
+        <div class="spock move spock-pos"></div>
+        <div class="paper move paper-pos"></div>
+        <div class="rock move rock-pos"></div>
+        <div class="lizard move lizard-pos"></div>
+      </div>
+    </div>
+
+    <footer>
+      <button class="rulesbtn">Rules</button>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,296 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.score > h3,
+.score p {
+  margin: 0px;
+}
+#sval {
+  font-size: 60px;
+}
+body {
+  background-image: radial-gradient(
+    circle,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1.1% 1.5%;
+  color: black;
+}
+.player,
+.house {
+  transform: scale(1.5);
+}
+.outer1,
+.outer2 {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  padding: 6%;
+}
+.outer1 {
+  left: 25%;
+}
+.outer2 {
+  left: 50%;
+}
+.houseanim {
+  animation-name: houseMove;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.04, 0.75, 0.72, 1.01);
+}
+.playeranim {
+  animation-name: playerMove;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.04, 0.75, 0.72, 1.01);
+}
+@keyframes houseMove {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 60%;
+  }
+}
+@keyframes playerMove {
+  0% {
+    left: 25%;
+  }
+  100% {
+    left: 16%;
+  }
+}
+.messagePar {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+.score {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.compete {
+  width: 100%;
+  position: absolute;
+  height: 50%;
+}
+.selection,
+.compete,
+.rules,
+.card,
+.board,
+.message,
+.ply,
+.mach {
+  opacity: 1;
+  transition: all 200ms ease-in;
+}
+.rules {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+.card {
+  display: inline-block;
+  background-color: aliceblue;
+  padding: 2% 3% 3% 3%;
+  border-radius: 10px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav img:hover {
+  cursor: pointer;
+}
+.cloak {
+  opacity: 0 !important;
+}
+.hide {
+  display: none;
+}
+.selection {
+  padding: 3%;
+  transform: scale(1.1);
+  background-image: url("images/bg-pentagon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 330px;
+  display: inline-block;
+  height: 310px;
+}
+
+.scissors {
+  background-image: url("images/icon-scissors.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-width: 16px;
+  border-style: solid;
+  border-color: hsl(40, 84%, 53%);
+  transition: all 200ms ease-in;
+  box-shadow: 0px 4px 0px 0.5px hsl(39, 100%, 35%);
+}
+.spock {
+  background-image: url("images/icon-spock.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 16px solid hsl(189, 58%, 57%);
+  transition: all 200ms ease-in;
+  box-shadow: 0px 4px 0px 0.5px hsl(189, 71%, 42%);
+}
+.paper {
+  background-image: url("images/icon-paper.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 16px solid hsl(230, 89%, 65%);
+  transition: all 200ms ease-in;
+  box-shadow: 0px 4px 0px 0.5px hsl(230, 87%, 59%);
+}
+
+footer button {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  padding: 11px 40px;
+  margin-bottom: 3%;
+  margin-right: 2%;
+  background: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+}
+
+.rock {
+  background-image: url("images/icon-rock.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 16px solid hsl(349, 70%, 56%);
+  transition: all 200ms ease-in;
+  box-shadow: 0px 4px 0px 0.5px hsl(349, 80%, 37%);
+}
+.lizard {
+  background-image: url("images/icon-lizard.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 16px solid hsl(261, 72%, 63%);
+  transition: all 200ms ease-in;
+  box-shadow: 0px 4px 0px 0.5px hsl(261, 83%, 53%);
+}
+.spock-pos {
+  display: inline-block;
+  position: relative;
+  bottom: -65px;
+  right: 176px;
+}
+.paper-pos {
+  display: inline-block;
+  position: relative;
+  bottom: 68px;
+  left: 240px;
+}
+.lizard-pos {
+  display: inline-block;
+  position: relative;
+  bottom: 36px;
+  left: 10px;
+}
+.rock-pos {
+  display: inline-block;
+  position: relative;
+  bottom: -95px;
+  left: 61px;
+}
+.scissors-pos {
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+  left: 100px;
+}
+.move:hover {
+  transform: scale(1.05);
+}
+.container {
+  display: flex;
+  padding: 3%;
+  justify-content: center;
+}
+.message {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.7);
+}
+.high {
+  z-index: 1;
+}
+.message button {
+  background: white;
+  border: 0px;
+  font-size: 10px;
+  padding: 12px 35px;
+  border-radius: 7px;
+  color: hsl(229, 25%, 31%);
+  outline: none;
+}
